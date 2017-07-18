@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('new');
     this.route('edit', {path: '/edit/:task_id'});
   });
+  this.route('about');
 });
 
 export default Router;
