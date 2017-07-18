@@ -4,6 +4,19 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'simpletasks',
     environment: environment,
+    contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
+    //contentSecurityPolicy: {
+      //'script-src': "'self' 'unsafe-eval' apis.google.com'",
+      //'frame-src': "'self' https://*.firebaseapp.com'",
+      //'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com'"
+    //},
+    firebase: {
+      apiKey: "xyz",
+      authDomain: "simpletasks-7a657.firebaseapp.com",
+      databaseURL: "https://simpletasks-7a657.firebaseio.com",
+      storageBucket: "simpletasks-7a657.appspot.com",
+    },
+
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
